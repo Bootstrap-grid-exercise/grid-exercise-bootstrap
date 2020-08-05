@@ -8,90 +8,97 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap-grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <title>Bootstrap Grid System</title>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
-    <div class="row">
+<div>
+    <div>
         <header>
-            <img src="logo.png" alt="logo">
-            <h1>codeup designs</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">WORK</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
+            <header><p>codeup designs</p></header>
+            <nav id="page-tabs" class="row">
+                <img id="logo" src="logo.png" alt="codeup design">
+                <a class="flex-lg-fill text-sm-center nav-link" href="#">SERVICE</a>
+                <a class="flex-lg-fill text-sm-center nav-link" href="#">WORK</a>
+                <a class="flex-lg-fill text-sm-center nav-link" href="#">BLOG</a>
+                <a class="flex-lg-fill text-sm-center nav-link" href="#">CONTACT</a>
             </nav>
         </header>
-        <main class="col-xl-8 col-lg-8">
+        <main>
             <h1>VISUAL DESIGN & WEB DEVELOPMENT</h1>
             <h2>FROM PARK CITY, UTAH</h2>
-            <div>
-                <p>DESIGN</p>
-                <p>DEVELOP</p>
-                <p>SUPPORT</p>
-                <p>HOST</p>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div id="large-dot" class="col-lg-3 col-md-3 col-sm-6 col-6">DESIGN</div>
+                    <div id="large-dot" class="col-lg-3 col-md-3 col-sm-6 col-6">DEVELOP</div>
+                    <div id="large-dot" class="col-lg-3 col-md-3 col-sm-6 col-6">SUPPORT</div>
+                    <div id="large-dot" class="col-lg-3 col-md-3 col-sm-6 col-6">HOST</div>
+                </div>
             </div>
-
-            <article >
-                <p>SELECTED WORK</p>
-                <div>
-                    <img src="images/apple-ipad.jpg" alt="">
-                    <p>FEATURED PROJECT</p>
-                    <p>D</p>
-                    <p>D</p>
-                    <p>S</p>
-                    <p>H</p>
+            <div class="container">
+                <div class="row">
+                    <article id="selected-work" class="col-xl-8 col-lg-8 col-md-8">
+                        <p>SELECTED WORK</p>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 ">
+                                <img src="images/apple-ipad.jpg" alt="">
+                                <header>FEATURED PROJECT</header>
+                                <p>D</p>
+                                <p>D</p>
+                                <p>S</p>
+                                <p>H</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <img src="images/macbook.jpg" alt="">
+                                <header>FEATURED PROJECT</header>
+                                <p>D</p>
+                                <p>D</p>
+                                <p>S</p>
+                                <p>H</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <img src="images/man.jpg" alt="">
+                                <header>FEATURED PROJECT</header>
+                                <p>D</p>
+                                <p>D</p>
+                                <p>S</p>
+                                <p>H</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <img src="images/security.jpg" alt="">
+                                <header>FEATURED PROJECT</header>
+                                <p>D</p>
+                                <p>D</p>
+                                <p>S</p>
+                                <p>H</p>
+                            </div>
+                        </div>
+                    </article>
+                    <aside class="col-xl-4 col-lg-4 col-md-4">
+                        <h4>THE LAST</h4>
+                        <div>
+                            <img src="images/mobile-phone.jpg">
+                            <h3>THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
+                        </div>
+                        <div>
+                            <img src="images/man.jpg">
+                            <h3>NIBBLER AWESOME WEBSITE TESTING</h3>
+                        </div>
+                        <div>
+                            <img src="images/ipad.jpg">
+                            <h3>HOW TO GET GOOGLE TO LIKE YOU</h3>
+                        </div>
+                        <div>
+                            <h4><i class="fab fa-twitter"></i>LAST TWEET</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eos fuga minima obcaecati pariatur porro!</p>
+                        </div>
+                    </aside>
                 </div>
-                <div>
-                    <img src="images/macbook.jpg" alt="">
-                    <p>FEATURED PROJECT</p>
-                    <p>D</p>
-                    <p>D</p>
-                    <p>S</p>
-                    <p>H</p>
-                </div>
-                <div>
-                    <img src="images/man.jpg" alt="">
-                    <p>FEATURED PROJECT</p>
-                    <p>D</p>
-                    <p>D</p>
-                    <p>S</p>
-                    <p>H</p>
-                </div>
-                <div>
-                    <img src="images/security.jpg" alt="">
-                    <p>FEATURED PROJECT</p>
-                    <p>D</p>
-                    <p>D</p>
-                    <p>S</p>
-                    <p>H</p>
-                </div>
-            </article>
-            <aside>
-                <h4>THE LAST</h4>
-                <div>
-                    <img src="images/mobile-phone.jpg">
-                    <h3>THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
-                </div>
-                <div>
-                    <img src="images/man.jpg">
-                    <h3>NIBBLER AWESOME WEBSITE TESTING</h3>
-                </div>
-                <div>
-                    <img src="images/ipad.jpg">
-                    <h3>HOW TO GET GOOGLE TO LIKE YOU</h3>
-                </div>
-                <div>
-                    <h4><i class="fab fa-twitter"></i>LAST TWEET</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eos fuga minima obcaecati pariatur porro!</p>
-                </div>
-            </aside>
+            </div>
         </main>
     </div>
 </div>
