@@ -3,106 +3,159 @@
     --develop-color: #EB9D3A;
     --support-color: #7CB06C;
     --host-color: #00ABA9;
-    --bg-color: #E6E6E6;
-    --white-ish: #F0F0F0;
+    --border-color: #E6E6E6;
+    --bg-color: #F0F0F0;
+}
+
+@media screen and (min-width: 769px) {
+    nav p {
+        text-align: left;
+        align-self: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
     aside {
         display: none;
     }
+
     nav p {
         text-align: center;
     }
+
 }
+
 @media screen and (max-width: 992px) {
     aside {
         display: none;
     }
-}
-@media screen and (min-width: 993px) {
-    nav p {
-        text-align: left;
+    article:first-child {
+        text-align: center;
     }
 }
 * {
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 }
 body {
     margin: 10px;
     background-color: var(--bg-color);
 }
+
 img {
     width: 100%;
 }
+
 nav p {
     font-size: 2em;
     width: 100%;
 }
+
 .row {
     margin: 0;
 }
-#logo {
-    height: 105px;
-    width: 105px;
+
+a {
+    font-family: 'Abel', sans-serif;
+}
+a:visited {
+    color: black;
+}
+a:link {
+    color: black;
+}
+a:hover {
+    color: black;
 }
 .large-dot {
     width: 105px;
     height: 105px;
-    text-align: right;
-    border: 10px solid var(--white-ish);
+    text-align: center;
+    border: 10px solid white;
+    color: white;
+    line-height: 5.2em;
+    margin-top: 20px;
 }
+
 .small-dots {
     text-align: center;
     line-height: 1.2em;
     font-weight: bold;
 }
-h1 {
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Anton', sans-serif;
 }
+
 p {
     font-family: 'Abel', sans-serif;
 }
-div>p {
+
+div > p {
     border-radius: 50%;
     width: 18px;
     height: 18px;
     display: inline-block;
 }
+#logo {
+    height: 105px;
+    width: 105px;
+}
+
 .center {
     padding-left: auto;
     padding-right: auto;
 }
+
 .container {
     padding: 0;
     width: 100%;
-}
-div {
-    /*padding: 0;*/
 }
 
 article {
     width: 100% !important;
 }
+
+article img {
+    border: 10px solid var(--border-color);
+    margin-bottom: 5px;
+}
 aside img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+aside h5 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bolder;
 }
 .design-circle {
     background-color: var(--design-color);
 }
+
 .develop-circle {
     background-color: var(--develop-color);
 }
+
 .support-circle {
     background-color: var(--support-color);
 }
+
 .host-circle {
     background-color: var(--host-color);
 }
+.header-bar {
+    position: absolute;
+    background-color: white;
+    height: 60px;
+    top: 2em;
+    width: 100%;
+    left: 0;
+}
 i {
-    color: blue;
+    color: steelblue;
     margin-top: 50px;
     margin-right: 10px;
 }
