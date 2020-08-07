@@ -15,20 +15,17 @@
 </head>
 <body>
 <div>
-    <header>
+    <header class="d-flex">
         <nav id="page-tabs" class="row d-flex" >
-            <div class="order-sm-3 order-md-1 col-12 col-sm-4 col-md-6 col-lg-8 col-xl-8 row">
-                <div class="col-12 col-sm-12 col-md-4 d-flex">
-                    <img id="logo" src="logo.png" alt="codeup design" class="mx-auto">
-                </div>
-                <div class="d-flex align-self-center justify-content-center col-12 col-sm-12 col-md-8 text-center">
-                    codeup designs
-                </div>
+            <div class="col-12 col-sm-4 col-md-2 col-lg-2 order-sm-3 order-md-1 d-flex">
+                    <img class="mx-auto" id="logo" src="logo.png" alt="codeup design">
             </div>
-            <a class="flex-lg-fill d-flex align-self-center justify-content-center nav-link col-3 order-sm-1 order-md-2 col-sm-2 col-md-1 col-lg-1" href="#">SERVICE</a>
-            <a class="flex-lg-fill d-flex align-self-center justify-content-center nav-link col-3 order-sm-2 order-md-3 col-sm-2 col-md-1 col-lg-1" href="#">WORK</a>
-            <a class="flex-lg-fill d-flex align-self-center justify-content-center nav-link col-3 order-sm-4 order-md-4 col-sm-2 col-md-1 col-lg-1" href="#">BLOG</a>
-            <a class="flex-lg-fill d-flex align-self-center justify-content-center nav-link col-3 order-sm-5 order-md-5 col-sm-2 col-md-1 col-lg-1" href="#">CONTACT</a>
+            <p class="flex-lg-fill nav-link col-12 order-sm-6 order-md-2 col-sm-12 col-md-6 col-lg-6">codeup designs</p>
+
+            <a class="flex-lg-fill d-flex align-self-center justify-content-center nav-link col-3 order-sm-1 order-md-3 col-sm-2 col-md-1 col-lg-1" href="#">SERVICE</a>
+            <a class="flex-lg-fill d-flex align-self-center justify-content-center nav-link col-3 order-sm-2 order-md-4 col-sm-2 col-md-1 col-lg-1" href="#">WORK</a>
+            <a class="flex-lg-fill d-flex align-self-center justify-content-center nav-link col-3 order-sm-4 order-md-5 col-sm-2 col-md-1 col-lg-1" href="#">BLOG</a>
+            <a class="flex-lg-fill d-flex align-self-center justify-content-center nav-link col-3 order-sm-5 order-md-6 col-sm-2 col-md-1 col-lg-1" href="#">CONTACT</a>
         </nav>
     </header>
     <main>
@@ -36,15 +33,16 @@
             <h1 class="col-12 text-center">VISUAL DESIGN & WEB DEVELOPMENT</h1>
             <h3 class="col-12 text-center">FROM PARK CITY, UTAH</h3>
         </div>
-        <hr class="d-none d-sm-block">
-        <div class="container mx-auto">
+
+        <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-6"><p class="large-dot rounded-circle bg-danger">DESIGN</p></div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-6"><p class="large-dot text-center rounded-circle bg-warning">DEVELOP</p></div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-6"><p class="large-dot text-center rounded-circle bg-success">SUPPORT</p></div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-6"><p class="large-dot text-center rounded-circle bg-info">HOST</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-6 d-flex justify-content-center"><p class="large-dot design-circle rounded-circle">DESIGN</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-6 d-flex justify-content-center"><p class="large-dot develop-circle text-center rounded-circle">DEVELOP</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-6 d-flex justify-content-center"><p class="large-dot support-circle text-center rounded-circle">SUPPORT</p></div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-6 d-flex justify-content-center"><p class="large-dot host-circle text-center rounded-circle">HOST</p></div>
             </div>
         </div>
+        <hr class="d-none d-sm-block">
         <div class="container-fluid">
             <div class="row">
                 <article id="selected-work" class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 mx-auto">
@@ -52,55 +50,71 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                             <img src="images/apple-ipad.jpg" alt="">
-                            <header>FEATURED PROJECT</header>
-                            <p>D</p>
-                            <p>D</p>
-                            <p>S</p>
-                            <p>H</p>
+                            <div class="d-flex justify-content-between">
+                                <header>FEATURED PROJECT</header>
+                                <div class="small-dots">
+                                    <p class="design-circle">D</p>
+                                    <p class="develop-circle">D</p>
+                                    <p class="support-circle">S</p>
+                                    <p class="host-circle">H</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 d-none d-sm-block">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-sm-block">
                             <img src="images/macbook.jpg" alt="">
-                            <header>FEATURED PROJECT</header>
-                            <p>D</p>
-                            <p>D</p>
-                            <p>S</p>
-                            <p>H</p>
+                            <div class="d-flex justify-content-between">
+                                <header>FEATURED PROJECT</header>
+                                <div class="small-dots">
+                                    <p class="design-circle">D</p>
+                                    <p class="develop-circle">D</p>
+                                    <p class="support-circle">S</p>
+                                    <p class="host-circle">H</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 d-none d-sm-block">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-sm-block">
                             <img src="images/man.jpg" alt="">
-                            <header>FEATURED PROJECT</header>
-                            <p>D</p>
-                            <p>D</p>
-                            <p>S</p>
-                            <p>H</p>
+                            <div class="d-flex justify-content-between">
+                                <header>FEATURED PROJECT</header>
+                                <div class="small-dots">
+                                    <p class="design-circle">D</p>
+                                    <p class="develop-circle">D</p>
+                                    <p class="support-circle">S</p>
+                                    <p class="host-circle">H</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6  col-sm-6 d-none d-sm-block">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-sm-block">
                             <img src="images/security.jpg" alt="">
-                            <header>FEATURED PROJECT</header>
-                            <p>D</p>
-                            <p>D</p>
-                            <p>S</p>
-                            <p>H</p>
+                            <div class="d-flex justify-content-between">
+                                <header>FEATURED PROJECT</header>
+                                <div class="small-dots">
+                                    <p class="design-circle">D</p>
+                                    <p class="develop-circle">D</p>
+                                    <p class="support-circle">S</p>
+                                    <p class="host-circle">H</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
                 <aside class="col-xl-4 col-lg-4 col-md-4">
-                    <h4>THE LAST</h4>
-                    <div>
+                    <p>THE LAST</p>
+                    <div class="d-flex">
                         <img src="images/mobile-phone.jpg">
-                        <h3>THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
+                        <h5>THE ADMIN BAR AND ABSOLUTE POSITIONING</h5>
                     </div>
-                    <div>
-                        <img src="images/man.jpg">
-                        <h3>NIBBLER AWESOME WEBSITE TESTING</h3>
+                    <div class="d-flex">
+                        <img src="images/head.jpg">
+                        <h5>NIBBLER AWESOME WEBSITE TESTING</h5>
                     </div>
-                    <div>
+                    <div class="d-flex">
                         <img src="images/ipad.jpg">
-                        <h3>HOW TO GET GOOGLE TO LIKE YOU</h3>
+                        <h5>HOW TO GET GOOGLE TO LIKE YOU</h5>
                     </div>
-                    <div>
-                        <h4><i class="fab fa-twitter"></i>LAST TWEET</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eos fuga minima obcaecati pariatur porro!</p>
+                    <div class="row">
+                        <h5><i class="fab fa-twitter"></i>LAST TWEET</h5>
+                        <p class="col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eos fuga minima obcaecati pariatur porro!</p>
                     </div>
                 </aside>
             </div>

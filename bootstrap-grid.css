@@ -1,6 +1,18 @@
+:root {
+    --design-color: #E6563B;
+    --develop-color: #EB9D3A;
+    --support-color: #7CB06C;
+    --host-color: #00ABA9;
+    --bg-color: #E6E6E6;
+    --white-ish: #F0F0F0;
+}
+
 @media screen and (max-width: 768px) {
     aside {
         display: none;
+    }
+    nav p {
+        text-align: center;
     }
 }
 @media screen and (max-width: 992px) {
@@ -8,13 +20,23 @@
         display: none;
     }
 }
+@media screen and (min-width: 993px) {
+    nav p {
+        text-align: left;
+    }
+}
 * {
     /*border: 1px solid black;*/
 }
 body {
     margin: 10px;
+    background-color: var(--bg-color);
 }
 img {
+    width: 100%;
+}
+nav p {
+    font-size: 2em;
     width: 100%;
 }
 .row {
@@ -23,14 +45,17 @@ img {
 #logo {
     height: 105px;
     width: 105px;
-
 }
 .large-dot {
-    position: relative;
-    /*border-radius: 50%;*/
-    width: 100%;
-    height: auto;
-    padding: 50%;
+    width: 105px;
+    height: 105px;
+    text-align: right;
+    border: 10px solid var(--white-ish);
+}
+.small-dots {
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: bold;
 }
 h1 {
     font-family: 'Anton', sans-serif;
@@ -58,4 +83,26 @@ div {
 
 article {
     width: 100% !important;
+}
+aside img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.design-circle {
+    background-color: var(--design-color);
+}
+.develop-circle {
+    background-color: var(--develop-color);
+}
+.support-circle {
+    background-color: var(--support-color);
+}
+.host-circle {
+    background-color: var(--host-color);
+}
+i {
+    color: blue;
+    margin-top: 50px;
+    margin-right: 10px;
 }
